@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | TechCon 2024</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header, footer { background: #222; color: #fff; padding: 1em 0; }
+        nav a { color: #fff; margin: 0 1em; text-decoration: none; }
+        main { max-width: 800px; margin: 2em auto; padding: 1em; }
+        .contact-info { margin-bottom: 2em; }
+        .contact-info a { color: #0073e6; text-decoration: none; }
+        .social-links a { margin-right: 1em; }
+        .map-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 2em; }
+        .map-container iframe { position: absolute; top:0; left:0; width:100%; height:100%; border:0; }
+        form { display: flex; flex-direction: column; gap: 1em; }
+        label { font-weight: bold; }
+        input, textarea { padding: 0.5em; font-size: 1em; width: 100%; }
+        button { background: #0073e6; color: #fff; border: none; padding: 0.75em; font-size: 1em; cursor: pointer; }
+        button:hover { background: #005bb5; }
+        footer { text-align: center; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="register.html">Register</a>
+        </nav>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>
+                Email: 
+                <a href="mailto:email@example.com">email@example.com</a>
+            </p>
+            <div class="social-links">
+                <span>Follow us:</span>
+                <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a>
+                <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+                <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+        </section>
+        <section class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019110333126!2d-122.4194150846816!3d37.7749297797594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b0e5b1b%3A0x4c9b7b7b7b7b7b7b!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1710000000000" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="TechCon 2024 Venue Location">
+            </iframe>
+        </section>
+        <section>
+            <h2>Contact Us Form</h2>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; copyright 2024 TechCon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
